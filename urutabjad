@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package barang;
+
+/**
+ *
+ * @author Hilya Zahiro
+ */
+public class Barang {
+    public static void main(String[] args) {
+        String barang []={"pensil", "bolpoin", "celana", "dadu"};
+      System.out.println("Barang sebelum diurutkan");
+for (int i=0; i<barang.length; i++){
+System.out.println(i+1+" "+barang[i]+" ");
+}
+System.out.println(" ");
+System.out.println("Barang diurutkan sesuai abjad");
+for (int i=0; i<(barang.length-1); i++){
+for (int j=0; j<(barang.length-1); j++){
+if(barang[j].compareTo(barang[j+1])>0){String temp = barang[j+1]; barang[j+1]=barang[j];barang[j]= temp;
+}
+}
+}
+for (int i=0; i<barang.length; i++){ System.out.println(i+1+" "+barang[i]);
+}
+}
+}
+        
+       
