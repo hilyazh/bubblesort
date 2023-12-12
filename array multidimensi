@@ -1,0 +1,16 @@
+public class Quiz {
+public static void main(String[] args) {
+        String barang [][]={
+            {"Buku           Rp2.000"},{"Bulpoin        Rp3.000"},
+            {"Pensil         Rp3.000"},{"penghapus      Rp2.000"},
+            {"Stabilo        Rp4.000"}
+            };
+        System.out.println("Nama Barang\tHarga");
+        for(int i=0; i<5; i++){
+            for(int j=0; j<1; j++){
+                System.out.print(barang[i][j]+"\t");
+            }
+            System.out.println("");
+        }
+        }
+    }
