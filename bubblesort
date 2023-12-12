@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package hargabesarkecil;
+
+/**
+ *
+ * @author Hilya Zahiro
+ */
+import java.util.Scanner;
+public class Hargabesarkecil {
+    public static void main(String[] args) {
+        int harga[]={19000,5000,24000,14000,9000};
+        System.out.println(" ");
+        System.out.print("Harga acak :");
+        for(int i=0; i<harga.length;i++){
+            System.out.print(harga[i]+" ");    
+        }
+        System.out.print(" ");
+        for(int i=0;i<harga.length;i++){
+            for(int j=0;j<harga.length-1;j++){
+                if(harga[j]<harga[j+1]){
+                    int temp = harga[j];
+                    harga[j] = harga[j+1];
+                    harga[j+1] = temp;
+                }
+            }
+        }
+        System.out.print(" Urutan harga dari yang terbesar : ");
+        for(int i=0; i<harga.length;i++){
+            System.out.print(harga[i]+" ");
+        }
+        System.out.println(" ");
+    } 
+        
+} 
+        
+   
